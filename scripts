@@ -1,0 +1,19 @@
+add static-configure.sh in the bash-source base directory
+add static-install.sh in the same directory
+
+
+put in static-configure::
+./configure --enable-static-link --without-bash-malloc --enable-readline
+echo ""
+echo "static configure done :: now you may modify the Makefile"
+echo "search for CFLAGS and add -march=native and -pipe"
+echo ""
+ls -lah Makefile | grep --color Makefile
+
+put in static-install.sh::
+cp bash /bin/sbash
+echo "Add sbash to /etc/shells"
+echo ""
+echo "To change default shell to sbash::"
+echo ""
+echo "chsh -s /bin/sbash root"
