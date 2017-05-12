@@ -1,6 +1,7 @@
 add static-configure.sh in the bash-source base directory
 add static-install.sh in the same directory
 
+LAST KNOWN GOOD BUILD @ 9PM 5/11/2017 with bash 4.4
 
 put in static-configure::
 ./configure --enable-static-link --without-bash-malloc --enable-readline
