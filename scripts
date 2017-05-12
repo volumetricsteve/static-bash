@@ -4,7 +4,7 @@ add static-install.sh in the same directory
 LAST KNOWN GOOD BUILD @ 9PM 5/11/2017 with bash 4.4
 
 put in static-configure::
-./configure --enable-static-link --without-bash-malloc --enable-readline
+./configure --enable-static-link --without-bash-malloc --enable-readline --enable-array-variables
 echo ""
 echo "static configure done :: now you may modify the Makefile"
 echo "search for CFLAGS and add -march=native and -pipe"
